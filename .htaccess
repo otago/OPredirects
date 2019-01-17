@@ -145,6 +145,16 @@ RewriteCond %{HTTP_HOST} ^citrixweb\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://opcitrixhtml5.cloud.com/$1 [R,L]
 
 
+# placements Redirect
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^placements\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://op-nz.inplacesoftware.com/$1 [R,L]
+
+# placements sandbox Redirect
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sandbox-placements\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://op-sandbox-signon-nz.inplacesoftware.com/$1 [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
