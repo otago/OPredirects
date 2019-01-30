@@ -14,7 +14,7 @@
 # CRM redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^crm\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/?&wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=LoginOptions\%3D3\%26estsredirect\%3d2\%26estsrequest\%3drQIIAZ1SP2gTURi_a9rShg6hFHEROtjgcnfv3r13uRwETZM2NPQS2xzG3PZy711yae4uvlyatIMiqCAUdHJwERw7iouOgg6dipsdBUGcHB09i3WqUIVv-X7f7_v_SwvmlW4cD4amokQD2eUBluleSALfHcpuFCh8MZ358O7xwYsn760311Ld-5nXHw_F0lmO249GlDPqc-bGET-nQEUpjuLu9m-KshFSNpHJcDA5FsWvongytdAcrjPKOIn9KHye-jQ14IXx0PsDZXlQOG23opEV6CV23qAJnOWjixEp88ioH59OkeV7_5GUECLe8WkB5TFAXptIIE-IhPKUSSSXp5LGGEWIqG2MYDaMQpcVSttWs5FsKp-6sq7pOAd1DAECuZyKIJYd20K1cmtiBVuxE6xhqwFAq7ezv9lc7zvlTuzYq37NXsM1uN63eluoBjdQveyqTs9KYtXgF9-yq73N5ga07GJsNbdAvVINnF6319q30KvUVYQB0w2IJMMgbQkRCqW8iqjUBp5mYEp0ANzPqUXSJ8OY-Dy8kVyDuHK4fzyd_ja9AFLm3Fw6I1wWloUf0-LLmUQd5WcP7y4dPqod6Jfwl3vzwtGMgousHvG1eqNRGSve7R2Wa01K-s2oszvWdttu_Y6dW4WDW0EHdwq6qT6dXTiaFb7PCm_nH4gXVpaJkPZ3dV0_w-zo3_97kl6CQDUkoElQXYaqiYAJDOcn0 [R,L]
+RewriteRule ^(.*)$ https://op.crm5.dynamics.com/$1 [R,L]
 
 # CRM dev redirect rule
 RewriteEngine On
