@@ -155,7 +155,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^sandbox-placements\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://op-sandbox-signon-nz.inplacesoftware.com/$1 [R,L]
 
-# placements sandbox Redirect
+# wellbeing-toolbox Redirect  -Emma Allen <Emma.Allen@op.ac.nz>
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^wellbeing-toolbox\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://studentservices.op.ac.nz/wellbeing-toolbox/$1 [R,L]
