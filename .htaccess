@@ -163,7 +163,7 @@ RewriteRule ^(.*)$ https://studentservices.op.ac.nz/wellbeing-toolbox/$1 [R,L]
 # Webexpenses redirect  -Tarun Laghate
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^webexpenses\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://au.webexpenses.com/we/saml/consume [R,L]
+RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=webexpenses [R,L]
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
