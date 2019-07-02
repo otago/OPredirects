@@ -174,7 +174,7 @@ RewriteCond %{HTTP_HOST} ^studymidwifery\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^studymidwifery\.co\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.ac\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.co\.nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.co\.nz [NC]
 RewriteRule ^(.*)$ http://otagopolytechnic.ac.nz/midwifery/$1 [R,L]
 
 ###########################################
