@@ -66,11 +66,6 @@ RewriteCond %{HTTP_HOST} ^onedrive\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/$1 [R,L]
 
 
-# Promapp redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^promapp\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://go.promapp.com/otagopolytechnic [R,L]
-
 # The Scopes redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^thescopes\.org [NC]
