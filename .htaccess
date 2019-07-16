@@ -160,6 +160,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^webexpenses\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=webexpenses [R,L]
 
+# LinkedIn Learning redirect
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^linkedinlearning\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=linkedinlearning [R,L]
+
 # Redirect for Midwifery domains 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^midwifery\.nz [NC,OR]
