@@ -163,7 +163,7 @@ RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoR
 # LinkedIn Learning redirect
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^linkedinlearning\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=linkedinlearning [R,L]
+RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://www.linkedin.com/learning/ABEAAAAAAANff9kAAAAAA6ieIQGnMcJUShNwaOBtm8pnx-49D3pJPQ [R,L]
 
 # Redirect for Midwifery domains 
 RewriteEngine On
