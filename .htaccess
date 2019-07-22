@@ -30,7 +30,8 @@ RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:feder
 # Lynda redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^lynda\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://shib.lynda.com/Shibboleth.sso/InCommon?providerId=http://idp.op.ac.nz/adfs/services/trust&amp;target=https://shib.lynda.com/InCommon/$1 [R,L]
+RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://www.linkedin.com/learning/ABEAAAAAAANff9kAAAAAA6ieIQGnMcJUShNwaOBtm8pnx-49D3pJPQ [R,L]
+#RewriteRule ^(.*)$ https://shib.lynda.com/Shibboleth.sso/InCommon?providerId=http://idp.op.ac.nz/adfs/services/trust&amp;target=https://shib.lynda.com/InCommon/$1 [R,L]
 
 # Myfiles redirect rule
 RewriteEngine On
