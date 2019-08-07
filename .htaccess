@@ -122,6 +122,7 @@ RewriteCond %{HTTP_HOST} ^edubits\.co\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^edubit\.co\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^edubits\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^edubit\.ac\.nz [NC]
+RewriteCond %{HTTP_HOST} ^edubits\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://edubits.nz/$1 [R,L]
 
 #marketing for Sports CAS-18072-B9W4S3
