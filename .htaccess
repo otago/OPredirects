@@ -168,6 +168,11 @@ RewriteCond %{HTTP_HOST} ^lil\.op\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^linkedinlearning\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://www.linkedin.com/learning/ABEAAAAAAANff9kAAAAAA6ieIQGnMcJUShNwaOBtm8pnx-49D3pJPQ [R,L]
 
+# Emergency redirect  -Steven Turnbull
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^emergency\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDKWSgSK2tfhMjngnAve-ufZURDBOTFM0Q1A3TDNNV0dNQVlHMUQ3MVZWSy4u [R,L]
+
 # Redirect for Midwifery domains 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^midwifery\.nz [NC,OR]
