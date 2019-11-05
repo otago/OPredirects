@@ -185,11 +185,6 @@ RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.co\.nz [NC]
 RewriteRule ^(.*)$ http://otagopolytechnic.ac.nz/midwifery/$1 [R,L]
 
-# Teams redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^teams\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://login.microsoftonline.com/common/oauth2/authorize?client_id=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&response_mode=form_post&response_type=code+id_token&scope=openid+profile&redirect_uri=https%3A%2F%2Fteams.microsoft.com&domain_hint=otagopoly.onmicrosoft.com [R,L]
-
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
