@@ -157,6 +157,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^wellbeing-toolbox\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://studentservices.op.ac.nz/wellbeing-toolbox/$1 [R,L]
 
+# getting-started Redirect CAS-55390-D1B1R1 - Emma Allen <Emma.Allen@op.ac.nz>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^getting-started\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://studentservices.op.ac.nz/getting-started/$1 [R,L]
+
 # Webexpenses redirect  -Tarun Laghate
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^webexpenses\.op\.ac\.nz [NC]
