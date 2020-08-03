@@ -205,6 +205,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^checkin\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://apps.powerapps.com/play/098267be-267a-4915-8772-2c332380bb01?tenantId=450e6824-88ab-4ad2-914d-b0f385da600c [R,L]
 
+# Wifi Form redirect  -Troy Thorpe
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^wifiform\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDADdm5UPai1MuCFyZtNrdupUQVhRNThZR0RBVUlRRldMNlpQNTVETERDUSQlQCN0PWcu [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
