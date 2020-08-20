@@ -215,6 +215,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^wifiform\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDADdm5UPai1MuCFyZtNrdupUQVhRNThZR0RBVUlRRldMNlpQNTVETERDUSQlQCN0PWcu [R,L]
 
+#printing - Matt Hall
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ http://fthpc03.op.ac.nz:9163/setup [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
