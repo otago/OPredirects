@@ -198,6 +198,7 @@ RewriteRule ^(.*)$ https://teams.microsoft.com/?domain_hint=op.ac.nz [R,L]
 # insite redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC]
+RewriteCond %{HTTP_HOST} ^projects\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/hub [R,L]
 
 # Checkin App redirect  -Steven Turnbull
