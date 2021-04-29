@@ -222,6 +222,12 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ http://fthpc03.op.ac.nz:9163/setup [R,L]
 
+#me@op
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^me\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://ess.myobpayglobal.com/OtagoPolytechnic [R,L]
+
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
