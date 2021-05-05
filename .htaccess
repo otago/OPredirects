@@ -227,6 +227,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^me\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://ess.myobpayglobal.com/OtagoPolytechnic [R,L]
 
+# ExamWifi Form redirect  -Troy Thorpe
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^examwifi\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDEBW_uE3yxREjrUCv2UPnohUMlM0V0lHRzVNM0dPTE5ZWTA5QVZOMkRNWCQlQCN0PWcu [R,L]
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
