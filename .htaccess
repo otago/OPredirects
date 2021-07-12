@@ -232,6 +232,12 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^examwifi\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDEBW_uE3yxREjrUCv2UPnohUMlM0V0lHRzVNM0dPTE5ZWTA5QVZOMkRNWCQlQCN0PWcu [R,L]
 
+# Mahara redirect  -Troy Thorpe
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^mahara\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://otagopoly-prod-mahara.sites.catlearn.nz [R,L]
+
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
