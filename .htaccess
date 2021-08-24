@@ -237,6 +237,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^mahara\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://otagopoly-prod-mahara.sites.catlearn.nz [R,L]
 
+#Attendance tracking - covid - Steve Turnbull
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^attendance\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://ebsontrack.op.ac.nz/Page/U_StaffUnmarkedRegisters [R,L]
+
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
