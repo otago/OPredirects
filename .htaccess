@@ -242,6 +242,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^attendance\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://ebsontrack.op.ac.nz/Page/U_StaffUnmarkedRegisters [R,L]
 
+#Tapaue
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^tapaue\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
+
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
