@@ -247,6 +247,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^tapuae\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
 
+#Positive Covid Form - Steve Turnbull
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^positive\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://forms.office.com/r/WJbQtFJwuh [R,L]
+
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
