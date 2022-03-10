@@ -229,7 +229,8 @@ RewriteRule ^(.*)$ https://ess.myobpayglobal.com/OtagoPolytechnic [R,L]
 
 #rereawhio.org
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^rereawhio.\nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^rereawhio\.nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^rereawhio\.org [NC]
 RewriteRule ^(.*)$ https://auckland.op.ac.nz/aicresearch/rereawhio [R,L]
 
 
