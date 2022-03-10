@@ -227,32 +227,12 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^me\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://ess.myobpayglobal.com/OtagoPolytechnic [R,L]
 
-# ExamWifi Form redirect  -Troy Thorpe
+#rereawhio.org
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^examwifi\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDEBW_uE3yxREjrUCv2UPnohUMlM0V0lHRzVNM0dPTE5ZWTA5QVZOMkRNWCQlQCN0PWcu [R,L]
+RewriteCond %{HTTP_HOST} ^rereawhio.\nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^rereawhio.\org [NC]
+RewriteRule ^(.*)$ https://auckland.op.ac.nz/aicresearch/rereawhio [R,L]
 
-# Mahara redirect  -Troy Thorpe
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^mahara\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://otagopoly-prod-mahara.sites.catlearn.nz [R,L]
-
-#Attendance tracking - covid - Steve Turnbull
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^attendance\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://ebsontrack.op.ac.nz/Page/U_StaffUnmarkedRegisters [R,L]
-
-#Tapaue
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^tapuae\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^www\.tapuae\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^tapuae\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
-
-#Positive Covid Form - Steve Turnbull
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^positive\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://forms.office.com/r/WJbQtFJwuh [R,L]
 
 
 ###########################################
