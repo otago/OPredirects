@@ -233,6 +233,11 @@ RewriteCond %{HTTP_HOST} ^rereawhio\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^rereawhio\.org [NC]
 RewriteRule ^(.*)$ https://auckland.op.ac.nz/aicresearch/rereawhio [R,L]
 
+#Redirect for Tapuae
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^tapuae\.nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^tapuae.\op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
 
 
 ###########################################
