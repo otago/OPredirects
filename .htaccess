@@ -240,6 +240,10 @@ RewriteCond %{HTTP_HOST} ^www\.tapuae\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^tapuae\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
 
+#no more central.op.ac.nz site - alastairn
+RewriteCond %{HTTP_HOST} ^central\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://www.op.ac.nz/
+
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
