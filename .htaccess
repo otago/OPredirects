@@ -247,7 +247,7 @@ RewriteRule ^(.*)$ https://www.op.ac.nz/ [R,L]
 #added because of new marketing site, lesley probably wants this - alastairn
 RewriteCond %{HTTP_HOST} ^research\.op\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^www\.research\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://www.op.ac.nz/industry-and-research/research/ [R,L]
+RewriteRule ^(.*)$ https://online.op.ac.nz/industry-and-research/research/ [R,L]
 
 
 ###########################################
