@@ -242,7 +242,7 @@ RewriteRule ^(.*)$ https://www.op.ac.nz/students/support/tapuae [R,L]
 
 #no more central.op.ac.nz site - alastairn
 RewriteCond %{HTTP_HOST} ^central\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://www.op.ac.nz/ [R,L]
+RewriteRule ^(.*)$ https://www.op.ac.nz/explore/campuses/central-otago-campuses/ [R,L]
 
 #added because of new marketing site, lesley probably wants this - alastairn
 RewriteCond %{HTTP_HOST} ^research\.op\.ac\.nz [NC,OR]
