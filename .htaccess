@@ -253,7 +253,6 @@ RewriteRule ^(.*)$ https://online.op.ac.nz/industry-and-research/research/ [R,L]
 RewriteCond %{HTTP_HOST} ^tepatauira\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/explore/find-accommodation/te-pa-tauira/ [R,L]
 
-
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
