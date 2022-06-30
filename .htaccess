@@ -249,6 +249,10 @@ RewriteCond %{HTTP_HOST} ^research\.op\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^www\.research\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://online.op.ac.nz/industry-and-research/research/ [R,L]
 
+#Redirect for Te Pa Tauira - Katie Wise
+RewriteCond %{HTTP_HOST} ^tepatauira\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://www.op.ac.nz/explore/find-accommodation/te-pa-tauira/ [R,L]
+
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
