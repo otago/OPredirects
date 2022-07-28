@@ -220,7 +220,7 @@ RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0
 #printing - Matt Hall
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ http://fthpc03.op.ac.nz:9163/setup [R,L]
+RewriteRule ^(.*)$ http://fthpc03.op.ac.nz:9164/setup [R,L]
 
 #me@op
 RewriteEngine On
@@ -256,10 +256,6 @@ RewriteRule ^(.*)$ https://www.op.ac.nz/explore/find-accommodation/te-pa-tauira/
 #Redirect for dev-mprint to bespoke port
 RewriteCond %{HTTP_HOST} ^dev-mprint\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://dev-fthpc01.op.ac.nz:9164/setup [R,L]
-
-#Redirect for mprint to bespoke port
-RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://fthpc03.op.ac.nz:9164/setup [R,L]
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
