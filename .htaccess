@@ -220,7 +220,7 @@ RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0
 #printing - Matt Hall
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ http://fthpc03.op.ac.nz:9164/setup [R,L]
+RewriteRule ^(.*)$ https://fthpc03.op.ac.nz:9164/setup [R,L]
 
 #me@op
 RewriteEngine On
