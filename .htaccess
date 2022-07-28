@@ -257,6 +257,10 @@ RewriteRule ^(.*)$ https://www.op.ac.nz/explore/find-accommodation/te-pa-tauira/
 RewriteCond %{HTTP_HOST} ^dev-mprint\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://dev-fthpc01.op.ac.nz:9164/setup [R,L]
 
+#Redirect for mprint to bespoke port
+RewriteCond %{HTTP_HOST} ^mprint\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://fthpc03.op.ac.nz:9164/setup [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
