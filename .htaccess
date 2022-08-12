@@ -130,12 +130,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^oae\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/study/physical-activity-and-wellbeing/new-zealand-certificate-in-outdoor-and-adventure-education-multi-skilled-level-4/$1 [R,L]
 
-# ebsontrackplus redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^ebsontrackplus\.op\.ac\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^ebsagent\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://ebsontrack.op.ac.nz/$1 [R,L]
-
 # citrixweb Redirect
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^citrixweb\.op\.ac\.nz [NC]
@@ -195,12 +189,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^teams\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://teams.microsoft.com/?domain_hint=op.ac.nz [R,L]
 
-# insite redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^webit\.op\.ac\.nz [NC,OR]
-RewriteCond %{HTTP_HOST} ^projects\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://www.op.ac.nz/hub [R,L]
 
 # Checkin App redirect  -Steven Turnbull
 RewriteEngine On
