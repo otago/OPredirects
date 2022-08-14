@@ -100,6 +100,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^showmehow\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=MEST\%3D0\%26LoginOptions\%3D2\%26wa\%3Dwsignin1.0\%26rpsnv\%3D2\%26ver\%3D6.1.6206.0\%26wp\%3DMCMBI\%26wreply\%3Dhttps\%253A\%252F\%252Fotagopoly.sharepoint.com\%252Fportals\%252Fhub\%252F_layouts\%252F15\%252FPointPublishing.aspx\%253Fapp\%253Dvideo\%2526p\%253Dc\%2526chid\%253D452c184b-b9e8-4447-ad08-363ac648a118\%2526s\%253D0\%2526t\%253Dpfb\%2520  [NE,R,L]
 
+# insite redirect rule
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC,OR]
+RewriteRule ^(.*)$ https://www.op.ac.nz/hub [R,L]
 
 #Confernce hosted at OP for file sharing - Michelle Barron <Michelle.Barron@op.ac.nz>
 RewriteEngine On
