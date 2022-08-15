@@ -102,7 +102,7 @@ RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:feder
 
 # insite redirect rule
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC,OR]
+RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/hub [R,L]
 
 #Confernce hosted at OP for file sharing - Michelle Barron <Michelle.Barron@op.ac.nz>
