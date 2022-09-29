@@ -249,6 +249,11 @@ RewriteRule ^(.*)$ https://www.op.ac.nz/explore/find-accommodation/te-pa-tauira/
 RewriteCond %{HTTP_HOST} ^dev-mprint\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://dev-fthpc01.op.ac.nz:9164/setup [R,L]
 
+# external performanceportal
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^performanceexcellence\.op\.ac\.nz [NC]
+RewriteRule ^(.*)$ https://online.op.ac.nz/hub/teams/corporate-services/information-systems-and-support/how-we-can-help/external-access-to-performance-portal  [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
 #   [R] = redirect 
