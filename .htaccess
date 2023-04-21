@@ -64,7 +64,7 @@ RewriteRule ^(.*)$ http://studentservices.op.ac.nz/$1  [R,L]
 # OneDrive redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^onedrive\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/$1 [R,L]
+RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/?login_hint=%40op%2Eac%2Enz [R,L]
 
 
 # The Scopes redirect rule
