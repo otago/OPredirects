@@ -176,7 +176,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^emergency\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDKWSgSK2tfhMjngnAve-ufZURDBOTFM0Q1A3TDNNV0dNQVlHMUQ3MVZWSy4u [R,L]
 
-# Redirect for Midwifery domains 
+# Redirect for Midwifery domains
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^midwifery\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^midwifery\.ac\.nz [NC,OR]
@@ -254,9 +254,13 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^performanceexcellence\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://online.op.ac.nz/hub/teams/corporate-services/information-systems-and-support/how-we-can-help/external-access-to-performance-portal  [R,L]
 
+#old CWP domains rewrite - alastairn
+RewriteCond %{HTTP_HOST} ^performanceanalysis-nz\.ac\.nz [NC]
+RewriteRule ^(.*)$ http://online.op.ac.nz/$1 [R,L]
+
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
-#   [R] = redirect 
+#   [R] = redirect
 #   [L]= Last (stop reading futher rules)
 #   [NC] = no case
 #   [NE] = By default, special characters, such as & and ?, for example, will be converted to their hexcode equivalent. Using the [NE] flag prevents that from happening.
