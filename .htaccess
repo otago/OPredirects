@@ -44,11 +44,6 @@ RewriteCond %{HTTP_HOST} ^mail\.op\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^mail\.student\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.outlook.com/mail.op.ac.nz/  [R,L]
 
-# StudentSupport redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^studentsupport\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ http://studentservices.op.ac.nz/$1  [R,L]
-
 # OneDrive redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^onedrive\.op\.ac\.nz [NC]
