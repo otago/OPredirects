@@ -129,12 +129,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^oae\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/study/physical-activity-and-wellbeing/new-zealand-certificate-in-outdoor-and-adventure-education-multi-skilled-level-4/$1 [R,L]
 
-# citrixweb Redirect
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^citrixweb\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://opcitrixhtml5.cloud.com/$1 [R,L]
-
-
 # placements Redirect
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^placements\.op\.ac\.nz [NC]
