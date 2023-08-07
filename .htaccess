@@ -105,11 +105,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^insite\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://www.op.ac.nz/hub [R,L]
 
-#Confernce hosted at OP for file sharing - Michelle Barron <Michelle.Barron@op.ac.nz>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^AssessingLearningConference\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://otagopoly.sharepoint.com/:f:/g/AssessingLearningConference/EmcsWyYlpKhOui7ShccQsCcBRqUhmYuQVU3k9E4vTeeM3A?e=fvOZg2  [NE,R,L]
-
 #www.central.op.ac Redirect
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.central\.op\.ac\.nz [NC]
