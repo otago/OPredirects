@@ -220,9 +220,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^performanceexcellence\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://online.op.ac.nz/hub/teams/corporate-services/information-systems-and-support/how-we-can-help/external-access-to-performance-portal  [R,L]
 
-#old CWP domains rewrite - alastairn
-RewriteCond %{HTTP_HOST} ^performanceanalysis\-nz\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ http://online.op.ac.nz/$1 [R,L]
 
 ###########################################
 #  CODES:  - https://httpd.apache.org/docs/2.4/rewrite/flags.html
