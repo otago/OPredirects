@@ -49,13 +49,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^onedrive\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/?login_hint=@op.ac.nz [R,L]
 
-
-# The Scopes redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^thescopes\.org [NC]
-RewriteRule ^(.*)$ http://www.thescopes.org [R,L]
-
-
 # Digital Signage Admin redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^digitalsignage\.op\.ac\.nz [NC]
