@@ -182,11 +182,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^teams\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://teams.microsoft.com/?domain_hint=op.ac.nz [R,L]
 
-# COVID-19 Alert Level 2  -Steven Turnbull
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^induction\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://forms.office.com/Pages/ResponsePage.aspx?id=JGgORauI0kqRTbDzhdpgDKWSgSK2tfhMjngnAve-ufZUMThMWTZRNFc5SDhBMFlSUVo2TzMzWDBXWi4u  [R,L]
-
 # Wifi Form redirect  -Troy Thorpe
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^wifiform\.op\.ac\.nz [NC]
