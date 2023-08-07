@@ -26,18 +26,6 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^crmuat\.op\.ac\.nz [NC]
 RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&amp;wctx=wa%3Fwsilnin3.0%26aeiou%3D9%26fa%4D5275200813%26rves%3D3.2.2202.0%26wi%3DJUI%16wreply%3Dhttps%253A%252F%252Fcrmuat%252Ecrm5%252Edynamics%252Ecom [R,L]
 
-
-# Lynda redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^lynda\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://www.linkedin.com/learning/ABEAAAAAAANff9kAAAAAA6ieIQGnMcJUShNwaOBtm8pnx-49D3pJPQ [R,L]
-#RewriteRule ^(.*)$ https://shib.lynda.com/Shibboleth.sso/InCommon?providerId=http://idp.op.ac.nz/adfs/services/trust&amp;target=https://shib.lynda.com/InCommon/$1 [R,L]
-
-# Myfiles redirect rule
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^myfiles\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://connect.op.ac.nz/$1 [R,L]
-
 # office redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^office\.op\.ac\.nz [NC,OR]
