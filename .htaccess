@@ -47,7 +47,7 @@ RewriteRule ^(.*)$ https://www.outlook.com/mail.op.ac.nz/  [R,L]
 # OneDrive redirect rule
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^onedrive\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/?login_hint=@op.ac.nz [R,L]
+RewriteRule ^(.*)$ https://otagopoly-my.sharepoint.com/ [R,L]
 
 # Digital Signage Admin redirect rule
 RewriteEngine On
