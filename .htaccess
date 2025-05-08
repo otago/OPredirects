@@ -142,7 +142,7 @@ RewriteCond %{HTTP_HOST} ^studymidwifery\.co\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^wellingtonmidwifery\.co\.nz [NC]
-RewriteRule ^(.*)$ http://www.op.ac.nz/study/health-and-community/midwifery/$1 [R,L]
+RewriteRule ^(.*)$ https://www.op.ac.nz/study/health/midwifery/$1 [R,L]
 
 # Microsoft Teams redirect rule
 RewriteEngine On
