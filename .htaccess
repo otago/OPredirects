@@ -125,7 +125,7 @@ RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoR
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^lil\.op\.ac\.nz [NC,OR]
 RewriteCond %{HTTP_HOST} ^linkedinlearning\.op\.ac\.nz [NC]
-RewriteRule ^(.*)$ https://idp.op.ac.nz/adfs/ls/idpinitiatedsignon.aspx?logintoRP=https://www.linkedin.com/learning/ABEAAAAAAANff9kAAAAAA6ieIQGnMcJUShNwaOBtm8pnx-49D3pJPQ [R,L]
+RewriteRule ^(.*)$ https://www.linkedin.com/checkpoint/enterprise/login/56590297?application=learning [R,L]
 
 # Emergency redirect  -Steven Turnbull
 RewriteEngine On
