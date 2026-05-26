@@ -1,9 +1,5 @@
 <?php
 
-echo "ss";
-
-<?php
-
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $uri  = $_SERVER['REQUEST_URI'] ?? '';
 
