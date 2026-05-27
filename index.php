@@ -32,7 +32,7 @@ if (preg_match('#^(office\.op\.ac\.nz|office\.student\.op\.ac\.nz)$#i', $host)) 
 }
 
 /**
- * OPDocs
+ * OPDocs 
  */
 if (preg_match('#^opdocs\.op\.ac\.nz$#i', $host)) {
     redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
