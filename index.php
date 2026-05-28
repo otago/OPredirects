@@ -21,7 +21,7 @@ if (preg_match('#^devcrm\.op\.ac\.nz$#i', $host)) {
 }
 
 if (preg_match('#^crmuat\.op\.ac\.nz$#i', $host)) {
-    redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
+    redirect("https://otagopolyuat.crm5.dynamics.com$uri");
 }
 
 /**
