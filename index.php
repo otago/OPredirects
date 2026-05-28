@@ -28,7 +28,8 @@ if (preg_match('#^crmuat\.op\.ac\.nz$#i', $host)) {
  * Office
  */
 if (preg_match('#^(office\.op\.ac\.nz|office\.student\.op\.ac\.nz)$#i', $host)) {
-    redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
+    //redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
+    redirect(" https://m365.cloud.microsoft/apps?from=PortalHome");
 }
 
 /**
@@ -77,12 +78,6 @@ if (preg_match('#^(changepassword\.op\.ac\.nz|www\.changepassword\.op\.ac\.nz)$#
     redirect("https://idp.op.ac.nz/adfs/portal/updatepassword");
 }
 
-/**
- * ShowMeHow
- */
-if (preg_match('#^showmehow\.op\.ac\.nz$#i', $host)) {
-    redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
-}
 
 /**
  * Insite
