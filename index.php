@@ -35,7 +35,13 @@ if (preg_match('#^(office\.op\.ac\.nz|office\.student\.op\.ac\.nz)$#i', $host)) 
  * OPDocs 
  */
 if (preg_match('#^opdocs\.op\.ac\.nz$#i', $host)) {
-    redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
+    //redirect("https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline");
+    
+    $url = 'https://idp.op.ac.nz/adfs/ls/?wa=wsignin1.0'
+        . '&wtrealm=urn:federation:MicrosoftOnline'
+        . '&wctx=MEST%3D0%26LoginOptions%3D2%26wa%3Dwsignin1.0%26rpsnv%3D2%26ver%3D6.1.6206.0%26wp%3DMCMBI%26wreply%3Dhttps%253A%252F%252Fotagopoly.sharepoint.com%252Fsites%252Fopdocs%252FPages%252Fhome.aspx';
+
+    redirect($url);
 }
 
 /**
